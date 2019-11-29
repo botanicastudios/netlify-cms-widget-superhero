@@ -1,0 +1,6 @@
+dev
+*.log
+.vscode
+*.md
+*.toml
+*.png

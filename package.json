@@ -1,0 +1,51 @@
+{
+	"name": "netlify-cms-widget-superhero",
+	"author": "Toby Marsden",
+	"description": "A Netlify CMS widget for superheroes. Super hero banners, that is.",
+	"keywords": [
+		"netlify",
+		"netlify-cms",
+		"cms",
+		"widget"
+	],
+	"version": "0.0.1",
+	"repository": "https://github.com/botanicastudios/netlify-cms-widget-superhero",
+	"homepage": "https://github.com/botanicastudios/netlify-cms-widget-superhero",
+	"license": "UNLICENSED",
+	"main": "dist/main.js",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-export-extensions": "^6.22.0",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"cross-env": "^5.1.4",
+		"css-loader": "^0.28.11",
+		"html-webpack-plugin": "^3.2.0",
+		"netlify-cms": "^1.7.0",
+		"react": "^16.3.2",
+		"source-map-loader": "^0.2.3",
+		"style-loader": "^0.21.0",
+		"uglifyjs-webpack-plugin": "^1.2.5",
+		"webpack": "^4.6.0",
+		"webpack-cli": "^3.2.1",
+		"webpack-serve": "^2.0.3"
+	},
+	"dependencies": {
+		"@hypervisual/assets": "^1.0.5",
+		"prop-types": "^15.6.1"
+	},
+	"peerDependencies": {
+		"react": "^16"
+	},
+	"scripts": {
+		"start": "webpack-serve --port 9000 --log-level error --open-path '/#/collections/test/entries/youtube_test'",
+		"demo": "webpack --display errors-only --devtool source-map",
+		"build": "cross-env NODE_ENV=production webpack",
+		"prepublishOnly": "npm run build"
+	}
+}

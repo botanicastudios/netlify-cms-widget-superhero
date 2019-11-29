@@ -1,0 +1,15 @@
+.superhero-editor {
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.superhero-editor.closed {
+  display: none;
+}
